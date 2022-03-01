@@ -1,0 +1,8 @@
+.navbar {
+  width: 250px;
+  border: 1px solid #ccc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

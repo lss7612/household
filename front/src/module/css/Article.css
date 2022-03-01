@@ -1,0 +1,14 @@
+.article {
+  border: 1px solid tomato;
+  height: 90vh;
+  width: 100%;
+}
+.right_wrapper {
+  width: 100%;
+  min-width: 750px;
+}
+.footer {
+  height: 10vh;
+  width: 100%;
+  border: 1px solid sandybrown;
+}
