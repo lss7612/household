@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./css/InsertCard.css";
 function InsertCard() {
-  //TOTO  카테고르 기져오기 필요함
+  //TOTO  카테고르 기져오기 필요함!
   const [category, setCategory] = useState(new Array());
   const [isCard, setIsCard] = useState();
 
