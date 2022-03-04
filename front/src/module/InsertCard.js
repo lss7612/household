@@ -3,10 +3,23 @@ import "./css/InsertCard.css";
 function InsertCard() {
   //TOTO  카테고르 기져오기 필요함!
   const [category, setCategory] = useState(new Array());
-  const [isCard, setIsCard] = useState();
+  const [isCard, setIsCard] = useState(false);
+
+  const clickCard = () => {
+    setIsCard(true);
+  };
+  const clickCash = () => {
+    setIsCard(false);
+  };
 
   return (
     <div className="card">
+      <span className="btn" onClick={clickCard}>
+        신용카드
+      </span>
+      <span className="btn" onClick={clickCash}>
+        현금/체크카드
+      </span>
       <div className="input_area">
         <label htmlFor="spend">금액</label>
         <input type="number" id="spend" />
@@ -19,7 +32,7 @@ function InsertCard() {
       </div>
       <div className="input_area">
         <label htmlFor="comment">코멘트</label>
-        <input />
+        <input type="text" />
       </div>
     </div>
   );
