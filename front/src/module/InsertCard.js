@@ -14,12 +14,14 @@ function InsertCard() {
 
   return (
     <div className="card">
-      <span className="btn" onClick={clickCard}>
-        신용카드
-      </span>
-      <span className="btn" onClick={clickCash}>
-        현금/체크카드
-      </span>
+      <div className="card_area">
+        <span className="btn" onClick={clickCard}>
+          신용카드
+        </span>
+        <span className="btn" onClick={clickCash}>
+          현금/체크카드
+        </span>
+      </div>
       <div className="input_area">
         <label htmlFor="spend">금액</label>
         <input type="number" id="spend" />

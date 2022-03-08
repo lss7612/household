@@ -9,7 +9,7 @@ function Article() {
     <div className="right_wrapper">
       <Router>
         <Routes>
-          <Route path="/dashboard" element={<Default />}></Route>
+          <Route path="/" element={<Default />}></Route>
           <Route path="/insert" element={<Insert />}></Route>
           <Route path="/weekly" element={<Weekly />}></Route>
           <Route path="/monthly" element={<Monthly />}></Route>

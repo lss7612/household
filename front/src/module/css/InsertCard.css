@@ -5,3 +5,17 @@
   display: flex;
   flex-direction: column;
 }
+
+.card_area {
+  display: flex;
+  justify-content: space-around;
+}
+
+span.btn {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+span.btn.active {
+  background-color: var(--msg_mktr_color);
+}

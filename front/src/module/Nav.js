@@ -3,11 +3,11 @@ function Nav() {
   return (
     <div className="navbar">
       <div className="logo_area">
-        <a href="/dashboard">로고 영역</a>
+        <a href="/">로고 영역</a>
       </div>
       <div className="menu_area">
         <div className="menu">
-          <a href="/dashboard">홈</a>
+          <a href="/">홈</a>
         </div>
         <div className="menu">
           <a href="/insert">지출 등록</a>
