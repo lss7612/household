@@ -4,6 +4,7 @@ import Insert from "../routes/Insert";
 import Default from "../routes/Default";
 import Monthly from "../routes/Monthly";
 import Weekly from "../routes/Weekly";
+import Test from "./Test";
 function Article() {
   return (
     <div className="right_wrapper">
@@ -13,6 +14,7 @@ function Article() {
           <Route path="/insert" element={<Insert />}></Route>
           <Route path="/weekly" element={<Weekly />}></Route>
           <Route path="/monthly" element={<Monthly />}></Route>
+          <Route path="/test" element={<Test />}></Route>
         </Routes>
       </Router>
       <div className="footer">푸터</div>

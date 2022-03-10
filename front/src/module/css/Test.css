@@ -1,0 +1,18 @@
+.test_form {
+  margin: 50px;
+  position: relative;
+}
+
+.test_form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.test_form input:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: blue;
+  font-size: 10px;
+}

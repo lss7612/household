@@ -18,6 +18,9 @@ function Nav() {
         <div className="menu">
           <a href="/monthly">월간 지출</a>
         </div>
+        <div>
+          <a href="/test">테스트페이지</a>
+        </div>
       </div>
       <div className="login_area">로그인영역</div>
     </div>

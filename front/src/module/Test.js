@@ -1,25 +1,10 @@
 import { useEffect, useState } from "react";
-
+import "./css/Test.css";
 function Test() {
-  function getList() {
-    fetch("/test")
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json);
-        setList(json);
-      });
-  }
-  const [list, setList] = useState(new Array());
-  useEffect(() => {
-    getList();
-  }, []);
   return (
-    <div>
-      <ul>
-        {list.map((item, idx) => {
-          return <li key={idx}>{item}</li>;
-        })}
-      </ul>
+    <div className="test_form">
+      <input id="test_input" type="text" />
+      <label htmlFor="test_input">테스트</label>
     </div>
   );
 }
