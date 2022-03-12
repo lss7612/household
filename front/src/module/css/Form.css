@@ -43,9 +43,7 @@ input {
   font-size: 15px;
 }
 .input_area input:focus ~ label,
-.input_area select:focus ~ label,
-.input_area input:valid ~ label,
-.input_area select:valid ~ label {
+.input_area select:focus ~ label {
   position: absolute;
   top: 10px;
   left: 0px;

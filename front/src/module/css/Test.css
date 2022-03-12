@@ -1,18 +1,67 @@
+:root {
+  --color_primary: #212121;
+  --color_primary_light: #484848;
+  --color_primary_dark: #000000;
+  --font_primary: white;
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  padding: 0;
+}
+
 .test_form {
   margin: 50px;
   position: relative;
+  width: 300px;
+  height: 50px;
+}
+
+.test_form input {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+}
+
+.test_form select {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+}
+
+.test_form input,
+.test_form select {
+  padding-left: 80px;
+  transition: all 0.3s ease-in-out;
+}
+.test_form input:focus,
+.test_form select:focus {
+  width: 210px;
+  padding-left: 10px;
 }
 
 .test_form label {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80px;
+  height: 40px;
+  background-color: var(--color_primary_light);
+  color: var(--font_primary);
   top: 0;
   left: 0;
   transition: 0.5s;
 }
 
-.test_form input:focus ~ label {
-  top: -20px;
+.test_form input:focus ~ label,
+.test_form select:focus ~ label {
+  top: -40px;
   left: 0;
-  color: blue;
-  font-size: 10px;
+  font-weight: bold;
 }

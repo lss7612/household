@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./css/InsertCard.css";
-import "./css/Form.css";
+// import "./css/Form.css";
 function InsertCard() {
   //TOTO  카테고르 기져오기 필요함!
   const [category, setCategory] = useState(new Array());
@@ -26,18 +26,18 @@ function InsertCard() {
       <div className="input_area">
         <input type="number" id="spend" />
         <label htmlFor="spend" required>
-          금액을 입력하세요
+          금액
         </label>
       </div>
       {isCard ? <CardInput /> : null}
       <div className="input_area">
         <select></select>
         <datalist></datalist>
-        <label htmlFor="category">대분류를 선택하세요</label>
+        <label htmlFor="category">대분류</label>
       </div>
       <div className="input_area">
         <input type="text" />
-        <label htmlFor="comment">코멘트를 입력하세요</label>
+        <label htmlFor="comment">코멘트</label>
       </div>
     </div>
   );
