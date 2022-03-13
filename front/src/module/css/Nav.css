@@ -1,6 +1,6 @@
 .navbar {
   min-width: 250px;
-  border: 1px solid #ccc;
+  box-shadow: 1px 1px #ccc;
   height: 100vh;
   display: flex;
   flex-direction: column;

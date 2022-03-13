@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  background-color: var(--color_primary);
 }
 
 :root {

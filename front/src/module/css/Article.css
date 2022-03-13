@@ -1,5 +1,5 @@
 .article {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   height: 90vh;
   width: 100%;
 }
@@ -10,5 +10,5 @@
 .footer {
   height: 10vh;
   width: 100%;
-  border: 1px solid sandybrown;
+  /* border: 1px solid sandybrown; */
 }

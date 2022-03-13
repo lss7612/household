@@ -1,16 +1,23 @@
 import InsertCard from "../module/InsertCard";
+import InputForm from "../module/InputForm";
+import SelectForm from "../module/SelectForm";
+import ToggleForm from "../module/ToggleForm";
 
 function Insert() {
   return (
     <div className="article">
-      <h1>Insert</h1>
-      <ul>
-        <li>금액 insert</li>
-        <li>카드 or 현금 >> 카드면 무슨카드?</li>
-        <li>대분류</li>
-        <li>코멘트</li>
-      </ul>
-      <InsertCard />
+      <div className="form_wrapper">
+        <ToggleForm left="신용카드" right="현금/직불" />
+        <InputForm id="money" label="금액" valid={true} reason="" />
+        <SelectForm
+          id="category"
+          label="분류"
+          valid={true}
+          reason=""
+          options={null}
+        />
+        <InputForm id="comment" label="코멘트" valid={true} reason="" />
+      </div>
     </div>
   );
 }
