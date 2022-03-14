@@ -175,7 +175,7 @@ select.not_valid ~ label {
     transform: rotate(45deg);
   }
   55% {
-    transform: rotate(45deg);
+    transform: rotate(47deg);
   }
   70% {
     transform: rotate(60deg);
