@@ -6,16 +6,18 @@ function ToggleForm({ left, right }) {
     setSignal(!signal);
   };
   return (
-    <div className="form">
-      <div className="switch_name">
-        <span>{left}</span>
-        <span>{right}</span>
-      </div>
-      <div
-        className={"switch_box " + (signal ? "on" : "off")}
-        onClick={onClickSwitch}
-      >
-        <div className="switch"></div>
+    <div className="form_div_right">
+      <div className="form">
+        <div className="switch_name">
+          <span>{left}</span>
+          <span>{right}</span>
+        </div>
+        <div
+          className={"switch_box " + (signal ? "on" : "off")}
+          onClick={onClickSwitch}
+        >
+          <div className="switch"></div>
+        </div>
       </div>
     </div>
   );

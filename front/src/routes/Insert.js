@@ -3,6 +3,7 @@ import InputForm from "../module/InputForm";
 import SelectForm from "../module/SelectForm";
 import ToggleForm from "../module/ToggleForm";
 import Button from "../module/Button";
+import DateInput from "../module/DateInput";
 
 function Insert() {
   const onClick = () => {
@@ -12,6 +13,7 @@ function Insert() {
   return (
     <div className="article">
       <div className="form_wrapper">
+        <DateInput />
         <ToggleForm left="신용카드" right="현금/직불" />
         <InputForm id="money" label="금액" valid={true} reason="" />
         <SelectForm

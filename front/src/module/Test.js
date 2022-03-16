@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./css/Test.css";
+
 function Test() {
   return (
     <div className="form_wrapper">

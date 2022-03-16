@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Article from "./module/Article";
+import "./module/css/Form.css";
 
 import "./App.css";
 

@@ -17,7 +17,7 @@ function Article() {
           <Route path="/test" element={<Test />}></Route>
         </Routes>
       </Router>
-      <div className="footer">푸터</div>
+      {/* <div className="footer">푸터</div> */}
     </div>
   );
 }

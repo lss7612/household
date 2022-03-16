@@ -2,6 +2,9 @@
   /* border: 1px solid tomato; */
   height: 90vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .right_wrapper {
   width: 100%;
